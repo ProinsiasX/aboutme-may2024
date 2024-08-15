@@ -1,4 +1,18 @@
 /* Box Styles */
+
+/* styles.css */
+.box {
+  border: 3px solid rgb(90, 90, 87);
+  padding: 10px;
+  margin: 10px;
+  display: flex; /* Enable flexbox */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  width: 100px;
+  height: 100px; /* Set a height to see vertical centering */
+}
+
+
 .box-container {
   display: flex;
   justify-content: space-around;
@@ -8,7 +22,7 @@
 .box {
   width: 100px; /* Adjust the size as needed */
   height: 100px;
-  border: 2px solid #ccc;
+  border: 3px solid #ccc;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -22,7 +36,7 @@
 }
 
 .box3 {
-  background-color: black;
+  background-color: rgb(119, 116, 116);
 }
 
 /* Add JavaScript classes to toggle colors */
