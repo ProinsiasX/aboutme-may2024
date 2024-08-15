@@ -1,82 +1,39 @@
-/* Basic Reset */
-* {
-    margin: 1;
-    padding: 1;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Tahoma, sans-serif;
-    background-color: #f4f7d5f8;
-    color: #3f3e3e;
-    line-height: 1.6;
-  }
-  
-  header {
-    background-color: #e6e2e2af;
-    color: #1d191900;
-    padding: 1em;
-    text-align: center;
-  }
-  
-  h1 {
-    margin: 0;
-    font-size: 2em;
-  }
-  
-  main {
-    padding: 1em;
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #c5bcbc;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  h2 {
-    border-bottom: 2px solid #007bff;
-    padding-bottom: 1em;
-    margin-bottom: 1em;
-    color: #4984c2;
-  }
-  
-  ul {
-    list-style: none;
-  }
-  
-  li {
-    margin-bottom: 0.5em;
-  }
-  
-  button.skill {
-    background: #007bff;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    padding: 0.5em 1em;
-    margin: 0.2em;
-    cursor: pointer;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
-  }
-  
-  button.skill:hover {
-    background: #0056b3;
-  }
-  
-  #details-content {
-    margin-top: 1em;
-    padding: 1em;
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-  }
-  
-  @media (max-width: 600px) {
-    button.skill {
-      display: block;
-      width: 100%;
-      margin: 0.5em 0;
-    }
-  }
-  
+/* Box Styles */
+.box-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 2em 0;
+}
+
+.box {
+  width: 100px; /* Adjust the size as needed */
+  height: 100px;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.box1 {
+  background-color: red;
+}
+
+.box2 {
+  background-color: green;
+}
+
+.box3 {
+  background-color: black;
+}
+
+/* Add JavaScript classes to toggle colors */
+.box1.toggle {
+  background-color: blue;
+}
+
+.box2.toggle {
+  background-color: yellow;
+}
+
+.box3.toggle {
+  background-color: white;
+}

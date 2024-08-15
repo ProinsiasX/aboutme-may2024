@@ -17,6 +17,27 @@
         <li>Podcasts</li>
         <li>Histtory</li>
        </ul> 
+
+        <div class="box-container">
+          <div class="box box1"></div>
+          <div class="box box2"></div>
+          <div class="box box3"></div>
+        </div>
+        
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            const boxes = document.querySelectorAll('.box');
+          
+            boxes.forEach(box => {
+              box.addEventListener('click', function() {
+                // Toggle the 'toggle' class to change the color
+                this.classList.toggle('toggle');
+              });
+            });
+          });
+          </script>
+          
+      
     </main>
   </body>
 </html>
